@@ -31,4 +31,6 @@
 
     <string name="error_connection">No Internet Connection</string>
     <string name="error_login">Login tidak berhasil. Periksa kembali username atau password Anda</string>
+    <string name="list_store">List Store</string>
+    <string name="user_a">User A</string>
 </resources>
