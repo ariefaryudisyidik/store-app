@@ -11,6 +11,7 @@
     <string name="data">: (data)</string>
     <string name="yes">: Ya</string>
     <string name="find_stores_distributors">Cari Toko/Distributor</string>
+    <string name="description">Description</string>
 
     <string name="error_connection">No Internet Connection</string>
     <string name="error_login">Login tidak berhasil. Periksa kembali username atau password Anda</string>

@@ -9,6 +9,7 @@ import androidx.navigation.fragment.findNavController
 import com.ariefaryudisyidik.store.R
 import com.ariefaryudisyidik.store.databinding.FragmentLoginBinding
 import com.ariefaryudisyidik.store.utils.Resource
+import com.ariefaryudisyidik.store.utils.hideKeyboard
 import com.ariefaryudisyidik.store.utils.toast
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -29,6 +30,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
     private fun login() {
         binding.apply {
             btnLogin.setOnClickListener {
+                requireContext().hideKeyboard(it)
                 val username = edtUsername.text.toString()
                 val password = edtPassword.text.toString()
 
@@ -56,7 +58,11 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
     }
 
     private fun showLoading(isVisible: Boolean) {
-        binding.progressBar.isVisible = isVisible
+        binding.apply {
+            progressBar.isVisible = isVisible
+            edtUsername.clearFocus()
+            edtPassword.clearFocus()
+        }
     }
 
     override fun onDestroyView() {
