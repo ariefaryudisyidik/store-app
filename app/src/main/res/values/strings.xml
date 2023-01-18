@@ -1,7 +1,16 @@
 <resources>
     <string name="app_name">Store</string>
-    <string name="error_connection">No Internet Connection</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
+    <string name="home">Home</string>
+    <string name="store_list">Store List</string>
+    <string name="store_detail">Store Detail</string>
+    <string name="result">Result</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="data">: (data)</string>
+    <string name="yes">: Ya</string>
+
+    <string name="error_connection">No Internet Connection</string>
+    <string name="error_login">Login tidak berhasil. Periksa kembali username atau password Anda</string>
 </resources>

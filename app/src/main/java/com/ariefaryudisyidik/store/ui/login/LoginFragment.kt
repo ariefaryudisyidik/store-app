@@ -5,6 +5,7 @@ import android.view.View
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.ariefaryudisyidik.store.R
 import com.ariefaryudisyidik.store.databinding.FragmentLoginBinding
 import com.ariefaryudisyidik.store.utils.Resource
@@ -38,11 +39,10 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
                         }
                         is Resource.Success -> {
                             showLoading(false)
-                            val data = result.data
-                            if (data?.stores == null) {
-                                requireContext().toast(data?.message)
+                            if (!result.data.isNullOrEmpty()) {
+                                findNavController().navigate(LoginFragmentDirections.toHomeFragment())
                             } else {
-                                requireContext().toast(data.status)
+                                requireContext().toast(getString(R.string.error_login))
                             }
                         }
                         is Resource.Error -> {

@@ -6,7 +6,7 @@ import com.ariefaryudisyidik.store.domain.repository.AuthRepository
 import javax.inject.Inject
 
 class AuthRepositoryImpl @Inject constructor(
-    private val api: ApiService
+    private val api: ApiService,
 ) : AuthRepository {
 
     override suspend fun login(username: String, password: String): LoginResponse {
