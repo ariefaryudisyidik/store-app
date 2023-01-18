@@ -12,6 +12,22 @@
     <string name="yes">: Ya</string>
     <string name="find_stores_distributors">Cari Toko/Distributor</string>
     <string name="description">Description</string>
+    <string name="total_store">Total\nStore</string>
+    <string name="acutal_store">Acutal\nStore</string>
+    <string name="precentage">Percentage</string>
+    <string name="menu">Menu</string>
+    <string name="visit">Kunjungan</string>
+    <string name="target_install_ncdfdpc">Target Install\nCDFDPC</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="transmission_history">Transmission\nHistory</string>
+    <string name="logout">Logout</string>
+
+    <string name="dummy_name">Mitha Khairulnisa</string>
+    <string name="dummy_nik">NIK : MD00001</string>
+    <string name="dummy_role">Role : {…}</string>
+    <string name="dummy_title_visit">Kujungan pada bulan Agustus 2020</string>
+    <string name="dummy_number">150</string>
+    <string name="dummy_percentage">50%</string>
 
     <string name="error_connection">No Internet Connection</string>
     <string name="error_login">Login tidak berhasil. Periksa kembali username atau password Anda</string>
