@@ -16,10 +16,17 @@ class StoreListFragment : Fragment(R.layout.fragment_store_list) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentStoreListBinding.bind(view)
 
-        navigateToStoreDetailFragment()
+        navigateToHome()
+        navigateToStoreDetail()
     }
 
-    private fun navigateToStoreDetailFragment() {
+    private fun navigateToHome() {
+        binding.imgBack.setOnClickListener {
+            findNavController().navigateUp()
+        }
+    }
+
+    private fun navigateToStoreDetail() {
         binding.tvVisit.setOnClickListener {
             findNavController().navigate(StoreListFragmentDirections.toStoreDetailFragment())
         }

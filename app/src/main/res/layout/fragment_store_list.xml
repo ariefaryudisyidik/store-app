@@ -15,7 +15,7 @@
         android:text="@string/list_store"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/img_back"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -28,7 +28,8 @@
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:contentDescription="@string/description"
+        android:id="@+id/img_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -67,7 +68,7 @@
         android:layout_width="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="List kunjungan 19-08-2020"
+        android:text="@string/title_visit_list"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline3" />

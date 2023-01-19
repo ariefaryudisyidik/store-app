@@ -16,7 +16,14 @@ class StoreDetailFragment : Fragment(R.layout.fragment_store_detail) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentStoreDetailBinding.bind(view)
 
+        navigateToStoreList()
         navigateToResult()
+    }
+
+    private fun navigateToStoreList() {
+        binding.imgBack.setOnClickListener {
+            findNavController().navigateUp()
+        }
     }
 
     private fun navigateToResult() {
