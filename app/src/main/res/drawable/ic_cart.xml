@@ -1,18 +1,18 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="24dp"
-    android:height="23.65dp"
+    android:width="48dp"
+    android:height="48dp"
     android:viewportWidth="24"
-    android:viewportHeight="23.65">
-  <path
-      android:pathData="M12.11,23.78A12,12 0,0 1,0 11.85a12,12 0,0 1,24 0A11.93,11.93 0,0 1,12.11 23.78Z"
-      android:fillColor="#1e88e4"/>
-  <path
-      android:pathData="M6.7,7.06c0.45,-0.53 1,-0.59 1.28,-0.4 2.43,1.73 5.16,0.72 7.75,0.91C18,7.74 18,7.68 17,9.86s-2.34,3.23 -4.76,2.82a1.53,1.53 0,0 0,-1.94 0.88c1.81,0 3.36,0 4.91,0 0.52,0 1.29,-0.18 1.26,0.69s-0.73,0.5 -1.17,0.51c-1.56,0 -3.12,0 -4.68,0 -1,0 -1.83,-0.34 -1.49,-1.67A5.58,5.58 0,0 0,6.7 7.06Z"
-      android:fillColor="#fbfcfe"/>
-  <path
-      android:pathData="M16.69,16.53a1,1 0,0 1,-1.14 0.92,0.88 0.88,0 0,1 -0.91,-0.94 0.93,0.93 0,0 1,1 -1.08A1,1 0,0 1,16.69 16.53Z"
-      android:fillColor="#eaf4fc"/>
-  <path
-      android:pathData="M10.11,17.46a0.94,0.94 0,0 1,-1 -1.1,0.92 0.92,0 0,1 1,-0.9 1,1 0,0 1,1.08 1C11.2,17.11 10.74,17.42 10.11,17.46Z"
-      android:fillColor="#e5f1fb"/>
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#1e88e4"
+        android:pathData="M12.11,23.78A12,12 0,0 1,0 11.85a12,12 0,0 1,24 0A11.93,11.93 0,0 1,12.11 23.78Z" />
+    <path
+        android:fillColor="#fbfcfe"
+        android:pathData="M6.7,7.06c0.45,-0.53 1,-0.59 1.28,-0.4 2.43,1.73 5.16,0.72 7.75,0.91C18,7.74 18,7.68 17,9.86s-2.34,3.23 -4.76,2.82a1.53,1.53 0,0 0,-1.94 0.88c1.81,0 3.36,0 4.91,0 0.52,0 1.29,-0.18 1.26,0.69s-0.73,0.5 -1.17,0.51c-1.56,0 -3.12,0 -4.68,0 -1,0 -1.83,-0.34 -1.49,-1.67A5.58,5.58 0,0 0,6.7 7.06Z" />
+    <path
+        android:fillColor="#eaf4fc"
+        android:pathData="M16.69,16.53a1,1 0,0 1,-1.14 0.92,0.88 0.88,0 0,1 -0.91,-0.94 0.93,0.93 0,0 1,1 -1.08A1,1 0,0 1,16.69 16.53Z" />
+    <path
+        android:fillColor="#e5f1fb"
+        android:pathData="M10.11,17.46a0.94,0.94 0,0 1,-1 -1.1,0.92 0.92,0 0,1 1,-0.9 1,1 0,0 1,1.08 1C11.2,17.11 10.74,17.42 10.11,17.46Z" />
 </vector>

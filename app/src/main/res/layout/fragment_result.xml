@@ -15,7 +15,7 @@
             android:id="@+id/constraintLayout"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:background="@color/black"
+            android:background="@color/grey"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/view2"
             app:layout_constraintStart_toStartOf="@+id/view2"
@@ -30,6 +30,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/main_menu"
+            android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,7 +38,7 @@
             android:id="@+id/textView43"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="userA"
+            android:text="@string/user_a"
             app:layout_constraintStart_toStartOf="@+id/textView44"
             app:layout_constraintTop_toBottomOf="@+id/textView44" />
 
@@ -46,7 +47,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:src="@drawable/ic_renew"
+            android:contentDescription="@string/description"
+            android:src="@drawable/ic_history_2"
             app:layout_constraintBottom_toBottomOf="@+id/textView43"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textView44" />
@@ -58,7 +60,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:background="@color/black"
+            android:background="@color/grey_2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView43" />
@@ -69,7 +71,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:singleLine="true"
-            android:text="Untuk support yang luar biasa di masa-masa covid-19 seperti ini."
+            android:text="@string/for_support"
+            android:textColor="@color/blue"
             app:layout_constraintEnd_toEndOf="@+id/view"
             app:layout_constraintStart_toStartOf="@+id/view"
             app:layout_constraintTop_toBottomOf="@+id/view" />
@@ -81,7 +84,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
-            android:background="@color/black"
+            android:background="@color/grey_2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView45" />
@@ -93,6 +96,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/blue"
             app:cardCornerRadius="8dp"
             app:layout_constraintEnd_toEndOf="@+id/view2"
             app:layout_constraintStart_toStartOf="@+id/view2"
@@ -104,10 +108,11 @@
 
                 <ImageView
                     android:id="@+id/imageView20"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
                     android:layout_marginStart="16dp"
-                    android:src="@drawable/ic_renew"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/img_profile"
                     app:layout_constraintBottom_toBottomOf="@+id/textView49"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/textView46" />
@@ -118,32 +123,39 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
-                    android:text="ST0001"
+                    android:text="@string/st0001"
+                    android:textColor="@color/white"
                     app:layout_constraintStart_toEndOf="@+id/imageView20"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/textView47"
+                    style="@style/Text.Bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Indomaret Komsen"
+                    android:text="@string/indomaret_komsen"
+                    android:textColor="@color/white"
                     app:layout_constraintStart_toStartOf="@+id/textView46"
                     app:layout_constraintTop_toBottomOf="@+id/textView46" />
 
                 <TextView
                     android:id="@+id/textView48"
+                    style="@style/Text.Bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Cluster : Small"
+                    android:text="@string/cluster_small"
+                    android:textColor="@color/white"
                     app:layout_constraintStart_toStartOf="@+id/textView47"
                     app:layout_constraintTop_toBottomOf="@+id/textView47" />
 
                 <TextView
                     android:id="@+id/textView49"
+                    style="@style/Text.Bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    android:text="TT Regular - ERTM Big - Pareto"
+                    android:text="@string/tt_regular_ertm_big_pareto"
+                    android:textColor="@color/white"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/textView48"
                     app:layout_constraintTop_toBottomOf="@+id/textView48" />
@@ -173,12 +185,13 @@
 
         <Button
             android:id="@+id/btn_finished"
+            style="@style/Button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="16dp"
-            android:text="Selesai"
+            android:text="@string/done"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />

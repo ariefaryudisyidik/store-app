@@ -8,11 +8,13 @@
 
     <TextView
         android:id="@+id/textView50"
+        style="@style/Text.Bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Dashbord Store"
+        android:text="@string/dashbord_store"
+        android:textColor="@color/orange"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,11 +24,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:drawableStart="@drawable/ic_renew"
         android:drawablePadding="4dp"
-        android:text="Perfect Store"
+        android:text="@string/perfect_store"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:drawableStartCompat="@drawable/ic_cancel" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
