@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
@@ -12,40 +11,40 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textView20"
+            android:id="@+id/tv_store_name"
             style="@style/Text.Bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:text="Toko A"
+            android:text="@string/toko_b"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView21"
+            android:id="@+id/tv_area_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cluster - Small"
-            app:layout_constraintStart_toStartOf="@+id/textView20"
-            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+            android:text="@string/cluster_small"
+            app:layout_constraintStart_toStartOf="@+id/tv_store_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_store_name" />
 
         <TextView
-            android:id="@+id/textView22"
+            android:id="@+id/tv_address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="TT - Regular - IRTM Big Store"
+            android:text="@string/tt_regular_ertm_big_pareto"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/textView21"
-            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+            app:layout_constraintStart_toStartOf="@+id/tv_area_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_area_name" />
 
         <TextView
             android:id="@+id/textView23"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1m"
+            android:text="@string/dummy_distance"
             app:layout_constraintEnd_toEndOf="@+id/imageView6"
             app:layout_constraintStart_toStartOf="@+id/imageView6"
             app:layout_constraintTop_toBottomOf="@+id/imageView6" />
@@ -56,9 +55,10 @@
             android:layout_height="18dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView22"
+            android:contentDescription="@string/description"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_address"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView20"
+            app:layout_constraintTop_toTopOf="@+id/tv_store_name"
             app:srcCompat="@drawable/ic_location" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

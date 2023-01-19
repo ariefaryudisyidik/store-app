@@ -28,11 +28,11 @@
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <ImageView
-        android:contentDescription="@string/description"
         android:id="@+id/img_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:contentDescription="@string/description"
         android:src="@drawable/ic_arrow_back"
         app:layout_constraintBottom_toBottomOf="@+id/textView13"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,15 +55,15 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:queryBackground="@android:color/transparent"
         android:background="@drawable/bg_search"
+        android:queryBackground="@android:color/transparent"
         android:theme="@style/SearchView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <TextView
-        android:id="@+id/tv_visit"
+        android:id="@+id/tv_title_visit"
         style="@style/Text.Bold"
         android:layout_width="wrap_content"
         android:layout_marginStart="16dp"
@@ -74,14 +74,15 @@
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_store"
+        android:id="@+id/rv_store_list"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_visit"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_visit"
         tools:listitem="@layout/item_store">
 
     </androidx.recyclerview.widget.RecyclerView>
