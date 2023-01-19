@@ -16,7 +16,7 @@
     <string name="acutal_store">Acutal\nStore</string>
     <string name="precentage">Percentage</string>
     <string name="menu">Menu</string>
-    <string name="visit">Kunjungan</string>
+    <string name="visit_in">Kunjungan</string>
     <string name="target_install_ncdfdpc">Target Install\nCDFDPC</string>
     <string name="dashboard">Dashboard</string>
     <string name="transmission_history">Transmission\nHistory</string>
@@ -33,4 +33,19 @@
     <string name="error_login">Login tidak berhasil. Periksa kembali username atau password Anda</string>
     <string name="list_store">List Store</string>
     <string name="user_a">User A</string>
+    <string name="no_visit">No Visit</string>
+    <string name="visit">Visit</string>
+    <string name="reset">Reset</string>
+    <string name="toko_b">Toko B</string>
+    <string name="dummy_address">Jalan Pal Merah No 25 Jakarta Barat</string>
+    <string name="outlet_type">Tipe Outlet</string>
+    <string name="display_type">Tipe Display</string>
+    <string name="display_sub_type">Sub Tipe Display</string>
+    <string name="ertm">ERTM</string>
+    <string name="e_merchandising">E-Merchandising</string>
+    <string name="last_visit">Last Visit</string>
+    <string name="dummy_date">05–09–2018</string>
+    <string name="dummy_location_status">Lokasi Belum sesuai</string>
+    <string name="pareto">Pareto</string>
+    <string name="store_verification">Verifikasi Store</string>
 </resources>
